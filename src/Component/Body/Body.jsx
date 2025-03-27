@@ -166,7 +166,7 @@ const Body = () => {
               onClick={handleThemeSwitch}
               className="text-xs font-1 dark:text-white text-[#4B6A9B] font-semibold tracking-wider"
             >
-              DARK
+              {theme === "dark" ? "Light" : "Dark"}
             </button>
             <div className="">
               <MdModeNight className="rotate-[120deg] dark:text-white text-[#697C9A] text-xl" />
