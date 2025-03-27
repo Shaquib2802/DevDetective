@@ -156,7 +156,7 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="block md:hidden mx-[5%]">
+      <div className="block md:hidden mx-[5%] pt-4">
         <div className="flex items-center  justify-between  ">
           <div className=" font-1 dark:text-white font-semibold text-xl text-[#4B6A9B]">
             DevDetective
