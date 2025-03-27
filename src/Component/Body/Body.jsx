@@ -53,11 +53,11 @@ const Body = () => {
           <div className="dark:text-white font-1 font-semibold text-xl text-[#4B6A9B]">
             DevDetective
           </div>
-          <button  onClick={handleThemeSwitch} className="flex  items-center gap-x-3 border-2  rounded-xl p-1 ">
-            <div
-              className="text-xs font-1 dark:text-white text-[#4B6A9B] font-semibold tracking-wider"
-             
-            >
+          <button
+            onClick={handleThemeSwitch}
+            className="flex  items-center gap-x-3 border-2  rounded-xl p-1 "
+          >
+            <div className="text-xs font-1 dark:text-white text-[#4B6A9B] font-semibold tracking-wider">
               {theme === "dark" ? "Light" : "Dark"}
             </div>
             <div className="">
@@ -162,7 +162,10 @@ const Body = () => {
             DevDetective
           </div>
           <div className="flex  items-center gap-x-3 ">
-            <button  onClick={handleThemeSwitch} className="text-xs font-1 dark:text-white text-[#4B6A9B] font-semibold tracking-wider">
+            <button
+              onClick={handleThemeSwitch}
+              className="text-xs font-1 dark:text-white text-[#4B6A9B] font-semibold tracking-wider"
+            >
               DARK
             </button>
             <div className="">
@@ -170,8 +173,8 @@ const Body = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-xl gap-x-36 justify-between shadow-xl items-center p-3 my-4 flex ">
-          <div className="flex gap-x-3 w-[80%]">
+        <div className="bg-white rounded-xl  justify-between shadow-xl items-center p-3 my-4 flex ">
+          <div className="flex gap-x-3 w-[70%]    ">
             <div className="">
               <IoSearchOutline className="text-[#0B7FFF] text-xl " />
             </div>
@@ -180,10 +183,10 @@ const Body = () => {
               placeholder="Enter a GitHub username..."
               value={search}
               onChange={(e) => getSearch(e.target.value)}
-              className="w-[70%] placeholder:text-[#4B6A9B] text-sm  font-1 outline-none "
+              className=" placeholder:text-[#4B6A9B] text-sm pl-1  outline-none  font-1  "
             />
           </div>
-          <div className="w-[20%] ">
+          <div className="w-[30%] ">
             <button
               type="submit"
               onClick={handleSearch}
