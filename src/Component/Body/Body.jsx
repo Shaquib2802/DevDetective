@@ -129,7 +129,7 @@ const Body = () => {
                 <div>
                   <FaLocationDot className="text-[#4B6A9B]" />
                 </div>
-                <div className="font-1 text-xs ">Location</div>
+                <div className="font-1 text-xs ">{data?.location}</div>
               </div>
               <div className="flex gap-x-2 cursor-pointer mx-auto">
                 <a href="data?.organizations_url">
@@ -259,11 +259,12 @@ const Body = () => {
               </div>
             </div>
             <div className="flex items-center gap-x-2">
-              <div>
+              <a href="data?.organizations_url">
+                {" "}
                 <HiOutlineBuildingOffice2 className="text-[#4B6A9B]" />
-              </div>
+              </a>
               <div className="font-1 text-sm  text-gray-400 underline">
-                Not Available
+                <div className="font-1 text-xs ">Organisation</div>
               </div>
             </div>
           </div>
