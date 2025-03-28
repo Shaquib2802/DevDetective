@@ -47,7 +47,7 @@ const Body = () => {
     });
   };
   return (
-    <div className="dark:bg-[#4B6A9B] bg-[#F6F8FF] md:h-screen">
+    <div className="dark:bg-[#4B6A9B] bg-[#F6F8FF] min-h-screen">
       <div className="lg:mx-[27%] mx-[10%] py-2 hidden md:block">
         <div className="flex items-center  justify-between py-3 ">
           <div className="dark:text-white font-1 font-semibold text-xl text-[#4B6A9B]">
