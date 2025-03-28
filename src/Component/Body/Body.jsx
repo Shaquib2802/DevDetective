@@ -100,7 +100,7 @@ const Body = () => {
               </div>
             </div>
             <div className="text-blue-500 font-1 underline text-sm ">
-              <a href="https://github.com/nk7318">@{data?.login}</a>{" "}
+              <a href={data?.html_url}>{data?.login}</a>{" "}
             </div>
             <div className="flex flex-col gap-y-2 my-2">
               <div className="text-xs text-[#788FB4] font-1">{data?.bio}</div>
@@ -131,11 +131,12 @@ const Body = () => {
                 </div>
                 <div className="font-1 text-xs ">Location</div>
               </div>
-              <div className="flex gap-x-2  mx-auto">
-                <div>
+              <div className="flex gap-x-2 cursor-pointer mx-auto">
+                <a href="data?.organizations_url">
                   <FaLink className="text-[#A4B4CC]" />
-                </div>
-                <div className="font-1 text-xs ">Location</div>
+                </a>
+
+                <div className="font-1 text-xs ">Organisation</div>
               </div>
               <div className="flex gap-x-2  mx-auto">
                 <div>
