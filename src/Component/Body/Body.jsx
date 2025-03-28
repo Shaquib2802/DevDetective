@@ -47,7 +47,7 @@ const Body = () => {
     });
   };
   return (
-    <div className="dark:bg-[#4B6A9B] bg-[#F6F8FF]  h-[100vh]">
+    <div className="dark:bg-[#4B6A9B] bg-[#F6F8FF] md:h-screen">
       <div className="lg:mx-[27%] mx-[10%] py-2 hidden md:block">
         <div className="flex items-center  justify-between py-3 ">
           <div className="dark:text-white font-1 font-semibold text-xl text-[#4B6A9B]">
@@ -157,7 +157,7 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="block md:hidden mx-[5%] pt-4">
+      <div className="block md:hidden mx-[5%] py-5 pt-4">
         <div className="flex items-center  justify-between  ">
           <div className=" font-1 dark:text-white font-semibold text-xl text-[#4B6A9B]">
             DevDetective
@@ -219,7 +219,7 @@ const Body = () => {
             {data?.bio}
           </div>
 
-          <div className="grid grid-cols-3 mx-5 text-center  my- bg-[#F6F8FF] rounded-lg shadow-md ">
+          <div className="grid grid-cols-3 mx-5 text-center py-4 my-6 bg-[#F6F8FF] rounded-lg shadow-md ">
             <div className="flex flex-col ">
               <div className="text-[#4B6A9B] text-[65%] font-1 ">Repos</div>
               <div className="font-1">{data?.public_repos}</div>
@@ -233,7 +233,7 @@ const Body = () => {
               <div className="font-1">{data?.following}</div>
             </div>
           </div>
-          <div className="flex py-3 gap-y-2 flex-col mx-5">
+          <div className="flex py-3 gap-y-4 flex-col mx-5">
             <div className="flex items-center gap-x-2">
               <div>
                 <FaLocationDot className="text-[#4B6A9B]" />
